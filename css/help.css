@@ -1,0 +1,94 @@
+.nav{
+	width: 100%;
+	height: 150px;
+	background: white;
+	position: absolute;
+}
+
+.logo{
+	width: 140px;
+	height: 140px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+}
+
+a {text-decoration: none;}
+
+.facts{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	position: absolute;
+	left: 35px;
+	top: 75px;
+	font-size: 21px;
+	}
+
+.help{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	position: absolute;
+	right: 35px;
+	top: 75px;
+	font-size: 21px;
+	}
+
+.rectangle {
+	width: 1000px;
+	height: 580px;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
+.first {
+	height: 180px;
+	left: -1000px;
+	animation-name: slideleftone;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideleftone{
+	from{ transform: translateX(-1000px);
+	}
+	to{transform: translateX(370px);}
+}
+
+.second {
+	height: 180px;
+	left: 0px;
+	animation-name: slideright;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideright{
+	from{ transform: translateX(2000px);
+	}
+	to{transform: translateX(0px);}
+}
+
+.third {
+	height: 180px;
+	left: 0px;
+	top: 20px;
+	animation-name: slideleftwo;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideleftwo{
+	from{ transform: translateX(-1000px);
+	}
+	to{transform: translateX(55px);}
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
